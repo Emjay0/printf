@@ -2,6 +2,8 @@
 #define _MAIN_H_
 
 #include <stdarg.h>
+#include <stddef.h>
+#include <stdlib.h>
 
 /**
 *struct print - structure for printing various types
@@ -30,5 +32,9 @@ int print_p(va_list p);
 int print_S(va_list S);
 int print_r(va_list r);
 int print_R(va_list R);
+int printhex(char *format, va_list);
+int printHEX(char *format, va_list);
+int printpercent(char *format, va_list pa);
+int printocta(char *format, va_list);
 
 #endif  /* _MAIN_H */
